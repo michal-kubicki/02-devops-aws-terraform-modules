@@ -6,7 +6,7 @@ variable "allowed_cidr_blocks" {
 variable "public_key" {
   description = "Name of the existing SSH key pair to use with EC2 instances."
   type        = string
-  default     = "London"
+  default     = "Key" # Don't rofget to set the key pair name.
 }
 variable "a_s_group_min_size" {
   description = "The minimum size of the auto scaling group."
