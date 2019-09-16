@@ -26,4 +26,4 @@ Run `terraform init` to download the providers for this module and then run `ter
 
  When the bucket and the table is created, open the `s3/main.tf` file again, enable the terraform config block (starting at line 51), call `terraform init` again and `terraform apply` to store the state file in the S3 bucket.
  
- Go to the envs\stage-eu-west-2 directory and start building individual modules. You can use Terragrunt to automate it and build the whole infrastructure with one command.
+ Go to the `envs/stage-eu-west-2` directory and start building individual modules. Make sure you check each variables.tf. The only thing you will have to change is the key pair name in the `envs\stage-eu-west-2\auto_scaling\variables.tf`. You can use Terragrunt to automate it and build the whole infrastructure with one command.
