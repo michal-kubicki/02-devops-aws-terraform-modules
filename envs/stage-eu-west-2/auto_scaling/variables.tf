@@ -11,7 +11,7 @@ variable "public_key" {
 variable "a_s_group_min_size" {
   description = "The minimum size of the auto scaling group."
   type        = number
-  default     = 2
+  default     = 3
 }
 variable "a_s_group_max_size" {
   description = "The maximum size of the auto scaling group."
